@@ -18,13 +18,13 @@ public class OddArray {
                 array[i]= scanner.nextInt();
             }
         }
-        int middleIndex = (number+1)/2;
-        int checker= 0;
+        int middleIndex = ((number+1)/2)-1;
+        int checker= 5;
         for(int i=0; i<number; i++){
             if(array[i]>array[middleIndex] || array[i]== array[middleIndex]){
                 checker = 1;
-            }else{
-                checker = 0;
+            }else if(array[i]<array[middleIndex]){
+                checker = 10;
                 break;
             }
         }
